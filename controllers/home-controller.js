@@ -1,5 +1,6 @@
 const express = require('express');
 
+
 // Création d'un objet "homeController" avec des méthodes
 const homeController = {
 
@@ -13,11 +14,18 @@ const homeController = {
     },
 
     about: (req, res) => {
-        res.send('<h1>About ☺</h1>');
+        const author = { firstname: 'Zaza', lastname: 'Vanderquack' };
+
+        res.render('home/about', {
+            firstname: author.firstname,
+            lastname: author.lastname
+        });
     },
 
     contactGet: (req, res) => {
-        res.send('<h1>Contact</h1>');
+        const categories = ['frontend', 'backend', 'db'];
+
+        res.render('home/contact', { categories });
     },
 
     contactPost: (req, res) => {
