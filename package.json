@@ -19,7 +19,7 @@
   },
   "homepage": "https://github.com/Form-JS/Demo-Express-04-Templating#readme",
   "dependencies": {
-    "chalk": "^5.0.0",
+    "chalk": "^4.1.2",
     "dayjs": "^1.10.8",
     "ejs": "^3.1.6",
     "express": "^4.17.3"
